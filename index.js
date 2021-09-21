@@ -6,7 +6,7 @@ import axios from "axios";
 dotenv.config()
 
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 const USER_ID = process.env.USER_ID
 const ACCESS_TOKEN = process.env.ACCESS_TOKEN
 
