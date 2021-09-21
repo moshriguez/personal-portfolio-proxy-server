@@ -6,7 +6,7 @@ import axios from "axios";
 dotenv.config()
 
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5000
 const USER_ID = process.env.USER_ID
 const ACCESS_TOKEN = process.env.ACCESS_TOKEN
 
@@ -34,4 +34,4 @@ const sendEmail = async (req, res) => {
 
 app.post('/', sendEmail)
 
-app.listen(port, ()=> console.log('listening on port 3000'))
+app.listen(port, ()=> console.log(`listening on port ${port}`))
